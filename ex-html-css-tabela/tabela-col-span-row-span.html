@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Tabela simples com colspan e rowspan</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<meta charset="UTF-8">
+
+		<style type="text/css">
+		table, td, th{
+			border: 5px #000000 solid;
+			border-collapse: collapse;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<caption>Alunos</caption>
+
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>RG</th>
+					<th>CPF</th>
+				</tr>
+			</thead>
+
+			<tfoot>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>RG</th>
+					<th>CPF</th>							
+				</tr>
+			</tfoot>
+
+			<tbody>				
+				<tr>
+					<td>Zé</td>
+					<td>ze@gmail.com</td>
+					<td colspan="2">1111111111</td>
+					<!-- tirei a coluna -->
+				</tr>
+
+				<tr>
+					<td>João</td>
+					<td>joao@gmail.com</td>
+					<td>2222222222</td>
+					<td>22222222222</td>
+				</tr>
+				<tr>
+					<td>Joziclei</td>
+					<td rowspan="2">joziclei@gmail.com</td>
+					<td>3333333333</td>
+					<td>33333333333</td>
+				</tr>
+				<tr>
+					<td>Euricléia</td>
+					<!-- tirei a coluna -->
+					<td>4444444444</td>
+					<td>44444444444</td>
+				</tr>								
+			</tbody>
+		</table>
+	</body>
+</html>
