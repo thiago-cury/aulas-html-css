@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Exemplo Formulário</title>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+		<style type="text/css">
+			textarea{
+				resize: none;
+			}
+			#titulo{
+				text-align: center;
+			}
+			#centro{
+				background-color: #EEEEEE;
+				width: 50%;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Formulário -->
+		<h1 id="titulo">Cadastre-se</h1>
+		<div id="centro">
+		  <form method="get" action="#">
+		  	<div>
+				<input type="text" name="txtnome" placeholder="Digite seu nome" autofocus="autofocus">
+			</div>
+				
+			<div>
+				<input type="password" name="txtsenha" placeholder="Digite sua senha">
+			</div>
+
+			<div>
+				<label>Estado Civil</label>
+				<select name="selestadocivil">
+				  <option value="" selected="selected">Selecione</option>
+				  <option value="solteiro">solteiro</option>
+				  <option value="casado">casado</option>
+				  <option value="crush">crush</option>
+				</select>
+			</div>
+
+			<div>
+				<label><input type="radio" name="rdsexo" value="masculino">masculino</label>
+				<label><input type="radio" name="rdsexo" value="feminino">feminino</label>
+			</div>
+
+			<div>
+				<label>Cadastre-se na nossa Newsletter agora!</label>
+				<input type="checkbox" name="chsim">
+			</div>
+
+			<div>
+				<label>Observação</label>
+				<textarea placeholder="Obs..." name="txtobs" maxlength="140"></textarea>
+			</div>
+
+			<div>
+				<label>Escolha a sua cor preferida</label>
+				<input type="color" name="color">
+			</div>
+
+			<div>
+				<input type="date" name="data">
+			</div>
+
+			<div>
+				<label>Número de carros</label>
+				<input type="number" id="number" name="qtdcarros" min="1" max="5">
+			</div>
+
+			<div>
+				<input type="submit" value="Cadastrar">
+				<input type="reset" value="Limpar">
+			</div>
+		  </form>
+		</div>
+	</body>
+</html>
