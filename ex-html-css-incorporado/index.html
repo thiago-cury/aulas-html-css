@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8">
 		<title>Exemplo HTML+CSS incorporado</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<meta charset="UTF-8">
 	
 		<!-- CSS incorporado -->
 		<style type="text/css">
-		body{
+		* {
+			margin: 0 auto;
+		}
+		body {
 			background-color: #FFB74D;
 		}
-
-		h1{
-			background-color: #FF9800;
-			text-align: center; /* left, right, center, justify */
-			border-width: 5px;
-			border-color: #000000;
-			border-style: solid; /* solid, double, dotted, dashed */
+		h1 {
+			background-color: #F98000;
+			text-align: center;
+			/* margin-top: 50px;
+			margin-left: 50px;
+			margin-right: 50px; */
+			
+			/* margin: top right bottom left; */
+			margin: 50px 50px 0px 50px;
+			
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
-		p{
+		p {
 			text-align: justify;
-			background-color: #EEEEEE;
 			text-indent: 30px;
 			margin-top: 50px;
 			margin-left: 50px;
 			margin-right: 50px;
-			padding-top: 10px;
 			padding-left: 10px;
 			padding-right: 10px;
 			padding-bottom: 10px;
-			border-bottom-width: 5px;
-			border-bottom-style: solid;
-			border-bottom-color: #000000;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #000000;
 		}
 		</style>
 	</head>

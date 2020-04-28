@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /* CSS - externo */
-body{
+body {
 	background-color: #FFB74D;
 }
 
-h1{
+h1 {
 	background-color: #FF9800;
 	text-align: center; /* left, right, center, justify */
 	border-width: 5px;
